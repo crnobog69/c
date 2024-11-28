@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satri Programming Language Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap"
+    />
+    <style>
+      :root {
+        --bg-primary: #0d1117;
+        --bg-secondary: #161b22;
+        --text-primary: #c9d1d9;
+        --text-secondary: #8b949e;
+        --accent-blue: #58a6ff;
+        --accent-green: #3fb950;
+        --accent-purple: #bc8cff;
+        --accent-orange: #f0883e;
+        --border-color: #30363d;
+        --code-red: #ff7b72;
+        --code-green: #7ee787;
+        --code-blue: #79c0ff;
+        --code-purple: #d2a8ff;
+        --code-yellow: #ffa657;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      pre,
+      code {
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      pre {
+        background-color: var(--bg-secondary);
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      code {
+        font-family: "JetBrains Mono", monospace;
+        color: var(--text-primary);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--accent-blue);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 0.3em;
+      }
+
+      .example {
+        border-left: 3px solid var(--accent-green);
+        padding-left: 20px;
+        margin: 20px 0;
+        background-color: var(--bg-secondary);
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .note {
+        background-color: var(--bg-secondary);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border: 1px solid var(--accent-purple);
+      }
+
+      a {
+        color: var(--accent-blue);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: var(--accent-purple);
+        text-decoration: underline;
+      }
+
+      /* Syntax highlighting */
+      .keyword {
+        color: var(--code-purple);
+      }
+      .string {
+        color: var(--code-green);
+      }
+      .comment {
+        color: var(--text-secondary);
+      }
+      .number {
+        color: var(--code-yellow);
+      }
+      .function {
+        color: var(--code-blue);
+      }
+
+      /* Dark scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--bg-secondary);
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 6px;
+        border: 3px solid var(--bg-secondary);
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--text-secondary);
+      }
+
+      footer {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        text-align: center;
+      }
+
+      /* Added styles */
+      .installation {
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--accent-orange);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .warning {
+        background-color: rgba(248, 81, 73, 0.1);
+        border-left: 3px solid #f85149;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 4px;
+      }
+
+      .tip {
+        background-color: rgba(63, 185, 80, 0.1);
+        border-left: 3px solid var(--accent-green);
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Satri Programming Language</h1>
+    <p>
+      Satri is a programming language with Serbian-inspired syntax that supports
+      basic programming constructs, character operations, and includes unique
+      features like Blood Meridian easter eggs.
+    </p>
+
+    <h2>Installation</h2>
+    <div class="installation">
+      <pre><code>gcc -o satri main.c lexer.c interpreter.c</code></pre>
+    </div>
+
+    <h2>Basic Syntax</h2>
+
+    <h3>Variables and Data Types</h3>
+    <div class="example">
+      <pre><code><span class="comment">// Integer variables</span>
+<span class="keyword">int</span> x, y, z;
+x = <span class="number">42</span>;
+
+<span class="comment">// Character variables</span>
+<span class="keyword">char</span> c;
+c = <span class="string">'A'</span>;
+
+<span class="comment">// Boolean variables</span>
+<span class="keyword">bool</span> istina = <span class="keyword">tacno</span>;    <span class="comment">// true</span>
+<span class="keyword">bool</span> laz = <span class="keyword">netacno</span>;     <span class="comment">// false</span></code></pre>
+    </div>
+
+    <h3>Input/Output</h3>
+    <div class="example">
+      <pre><code><span class="comment">// Output</span>
+ispis = <span class="string">"Zdravo svete!"</span>;    <span class="comment">// Print string</span>
+ispis x;                    <span class="comment">// Print variable</span>
+
+<span class="comment">// Input</span>
+ucitaj x;                   <span class="comment">// Read input into variable</span></code></pre>
+    </div>
+
+    <h3>Functions</h3>
+    <div class="example">
+      <pre><code><span class="keyword">def</span> <span class="function">saberi</span> {
+    <span class="keyword">int</span> a, b;
+    a = <span class="number">10</span>;
+    b = <span class="number">20</span>;
+    ispis a + b;
+}
+
+<span class="comment">// Call function</span>
+saberi;</code></pre>
+    </div>
+
+    <h3>Character Operations</h3>
+    <div class="example">
+      <pre><code><span class="keyword">char</span> c;
+c = <span class="string">'A'</span>;
+
+u_broj c;      <span class="comment">// Convert to ASCII number</span>
+veliko c;      <span class="comment">// Convert to uppercase</span>
+malo c;        <span class="comment">// Convert to lowercase</span>
+je_broj c;     <span class="comment">// Check if digit</span>
+je_slovo c;    <span class="comment">// Check if letter</span></code></pre>
+    </div>
+
+    <h2>Easter Eggs</h2>
+    <div class="note">
+      <p>
+        Satri includes two special commands that print quotes from Blood
+        Meridian:
+      </p>
+      <pre><code>bloodmeridian;    <span class="comment">// Prints English quote</span>
+krvavimeridijan;  <span class="comment">// Prints Serbian quote</span></code></pre>
+    </div>
+
+    <h2>Comments</h2>
+    <div class="example">
+      <pre><code><span class="comment">// Single line comment</span>
+
+<span class="comment">/*
+   Multi-line
+   comment
+*/</span></code></pre>
+    </div>
+
+    <h2>File Extension</h2>
+    <p>Satri programs use the <code>.st</code> file extension.</p>
+
+    <h2>Program Termination</h2>
+    <p>Every program must end with the <code>`judge`</code> keyword.</p>
+    <p>Use the <code>`judge`</code> keyword to terminate the program.</p>
+
+    <h2>Running the program</h2>
+    <p>
+      To run the program, use the following command:
+      <code>./satri program.st</code>
+    </p>
+
+    <h2>Početni Primeri (Beginner Examples)</h2>
+
+    <h3>1. Prvi Program (First Program)</h3>
+    <div class="example">
+      <pre><code>def main {
+    stampaj = "Zdravo svete!";
+}
+
+main;
+judge</code></pre>
+    </div>
+
+    <h3>2. Rad sa Brojevima (Working with Numbers)</h3>
+    <div class="example">
+      <pre><code>def saberi {
+    broj x = 5;
+    broj y = 3;
+    stampaj x + y;  // Ispisuje 8
+}
+
+saberi;
+judge</code></pre>
+    </div>
+
+    <h3>3. Unos i Ispis (Input and Output)</h3>
+    <div class="example">
+      <pre><code>def program {
+    broj x;
+    stampaj = "Unesite broj:";
+    ucitaj x;
+    stampaj = "Uneli ste:";
+    stampaj x;
+}
+
+program;
+judge</code></pre>
+    </div>
+
+    <footer>
+      <p>© 2024 Satri Programming Language</p>
+    </footer>
+  </body>
+</html>
