@@ -1,7 +1,6 @@
 # Задаци из програмског језика C
 
 - [`satri`](satri/)
-
 - [`prviSemestar`](prviSemestar/)
   - [`kolokvijum1-2024`](prviSemestar/kolokvijum1-2024/)
     - [`kolokvijum2020`](prviSemestar/kolokvijum1-2024/kolokvijum2020/)
