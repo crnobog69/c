@@ -1,4 +1,4 @@
-# Задаци из програмског језика `C`
+# <p align="center">Задаци из програмског језика `C`</p>
 
 - [`satri`](satri/)
 - [`prviSemestar`](prviSemestar-2024/)
