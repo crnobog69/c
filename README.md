@@ -14,7 +14,7 @@
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum2-2024/zadaci1/)
 
-_Форматирање:_
+## **Форматирање:**
 
 ```bash
 bun add prettier --dev && bun prettier --write .
