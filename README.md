@@ -2,7 +2,6 @@
 
 ## Структуре директоријума
 
-```
 - [`satri`](satri/)
 - [`prviSemestar`](prviSemestar-2024/)
   - [`kolokvijum1-2024`](prviSemestar-2024/kolokvijum1-2024/)
@@ -16,7 +15,6 @@
     - [`funkcije`](prviSemestar-2024/kolokvijum2-2024/funkcije/)
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum2-2024/zadaci1/)
-```
 
 ## **Форматирање:**
 
