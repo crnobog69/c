@@ -10,5 +10,6 @@
     - [`zadaci4`](prviSemestar-2024/kolokvijum1-2024/zadaci4/)
     - [`zadaci5`](prviSemestar-2024/kolokvijum1-2024/zadaci5/)
   - [`kolokvijum2-2024`](prviSemestar-2024/kolokvijum2-2024/)
+    - [`funkcije`](prviSemestar-2024/kolokvijum2-2024/funkcije/)
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum2-2024/zadaci1/)
