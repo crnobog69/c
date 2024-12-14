@@ -11,4 +11,28 @@ double Stepen(double x, int n)
     negative = n < 0;
     if (negative)
         n = -n;
+    for (i = 0; i < n; i++)
+        s *= x;
+    if (negative)
+        return (1 / s);
+    else
+        return (s);
+}
+
+int main()
+{
+    int n;
+    double x, s;
+
+    printf("\n Osnova: ");
+    scanf("%lf", &x);
+    printf("\n n = ");
+    scanf("%d", &n);
+
+    s = Stepen(x, n);
+
+    printf("\n Rezultat: %.2f\n", s);
+
+    getchar();
+    return 0;
 }
