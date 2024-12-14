@@ -1,5 +1,7 @@
 # <p align="center">Задаци из програмског језика `C`</p>
 
+## Структуре директоријума
+
 - [`satri`](satri/)
 - [`prviSemestar`](prviSemestar-2024/)
   - [`kolokvijum1-2024`](prviSemestar-2024/kolokvijum1-2024/)
