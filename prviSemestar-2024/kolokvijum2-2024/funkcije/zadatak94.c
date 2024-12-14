@@ -15,4 +15,16 @@ long Fakt(int n)
 int main()
 {
     long n, s = 0;
+    int i;
+
+    printf(" n = ");
+    scanf("%ld", &n);
+
+    for (i = 1; i <= n; i++)
+        s += Fakt(i);
+
+    printf("\n S = %ld\n", s);
+
+    getchar();
+    return 0;
 }
