@@ -14,6 +14,10 @@
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum2-2024/zadaci1/)
 
+---
+
+Форматирање кода у програмима са помоћним алатомом `prettier`:
+
 ```bash
 bun add prettier --dev && bun prettier --write .
 ```
