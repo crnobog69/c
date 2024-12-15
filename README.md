@@ -14,7 +14,12 @@
   - [`kolokvijum2-2024`](prviSemestar-2024/kolokvijum2-2024/)
     - [`funkcije`](prviSemestar-2024/kolokvijum2-2024/funkcije/)
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
-    - [`zadaci1`](prviSemestar-2024/kolokvijum2-2024/zadaci1/)
+    - [`nizovi`](prviSemestar-2024/kolokvijum2-2024/nizovi/)
+  - [`windows`](prviSemestar-2024/windows/)
+    - [`zadaci1`](prviSemestar-2024/windows/zadaci1/)
+    - [`zadaci2`](prviSemestar-2024/windows/zadaci2/)
+    - [`zadaci3`](prviSemestar-2024/windows/zadaci3/)
+    - [`zadaci4`](prviSemestar-2024/windows/zadaci4/)
 
 ## **Форматирање:**
 
