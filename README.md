@@ -21,19 +21,19 @@
     - [`zadaci3`](prviSemestar-2024/windows/zadaci3/)
     - [`zadaci4`](prviSemestar-2024/windows/zadaci4/)
 
-## **Форматирање:**
+## Форматирање:
 
 ```bash
 bun add prettier --dev && bun prettier --write .
 ```
 
-Компајлирање
+## Компајлирање
 
 ```bash
 ruby compile.rb
 ```
 
-`C` у `Markdown`
+## `C` у `Markdown`
 
 ```bash
 ruby ctomd.rb
