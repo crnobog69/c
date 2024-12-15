@@ -7,7 +7,7 @@
 main()
 {
  	  int i, n, niz[MAX], sumap = 0, suman = 0;
- 	  
+
  	  printf(" Broj elemenata: ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza: ");
@@ -21,7 +21,7 @@ main()
   	  }
   	  printf(" Suma parnih = %d\n", sumap);
   	  printf(" Suma neparnih = %d\n", suman);
-  	  
+
   	  getche();
   	  return 0;
 }

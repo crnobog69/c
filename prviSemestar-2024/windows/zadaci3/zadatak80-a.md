@@ -8,7 +8,7 @@ main()
       int c;
       c = getchar();
       putchar(c);
-      
+
       getche();
       return 0;
       }
