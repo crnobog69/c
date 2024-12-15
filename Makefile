@@ -20,6 +20,6 @@ all: $(EXECUTABLES)
 
 # Čišćenje svih generisanih executable-a
 clean:
-	find prviSemestar-2024 -type f -executable -delete
+	find . -type f -name "*.o" -exec rm -f {} +
 
 .PHONY: all clean
