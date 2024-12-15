@@ -3,6 +3,8 @@
 # Додавање свих измењених датотека у git
 git add .
 
+make clean
+
 make all
 
 make clean
