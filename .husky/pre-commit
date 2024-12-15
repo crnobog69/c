@@ -3,6 +3,10 @@
 # Додавање свих измењених датотека у git
 git add .
 
+# `C`` у `Markdown``
+
+ruby ctomd.rb
+
 # Покретање Prettier на свим датотекама
 
 bun prettier --write .
