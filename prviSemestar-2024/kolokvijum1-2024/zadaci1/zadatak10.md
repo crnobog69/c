@@ -25,7 +25,7 @@ int main()
     case 11:
         BrDana = 30;
     case 2:
-        BrDana = 28 + (godina % 4 == 0 && godina % 100 != 0 || godina % 400 == 0);
+        BrDana = 28 + ((godina % 4 == 0 && godina % 100 != 0) || godina % 400 == 0);
         break;
     default:
         BrDana = 0;
