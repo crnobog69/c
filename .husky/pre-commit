@@ -12,6 +12,3 @@ ruby ctomd.rb
 
 # Покретање Prettier на свим датотекама
 bun prettier --write .
-
-# `C`` у `Markdown``
-ruby ctomd.rb
