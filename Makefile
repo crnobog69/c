@@ -20,6 +20,6 @@ all: $(EXECUTABLES)
 
 # Čišćenje svih generisanih executable-a
 clean:
-	find . -type f -name "*.o" -exec rm -f {} +
+		find . -type f -name "*.o" ! -executable -exec rm -f {} +
 
 .PHONY: all clean
