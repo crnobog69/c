@@ -7,7 +7,7 @@ make all
 
 make clean
 
-make > output.log 2>&1
+make > make.log 2>&1
 
 # `C`` у `Markdown``
 ruby ctomd.rb

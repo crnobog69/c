@@ -12,7 +12,7 @@
 
 int main()
 {
-    int c;
+    int c = 0; // Иницијализујемо c на неку вредност
     while (c != EOF)
     {
         c = getchar();
@@ -22,4 +22,5 @@ int main()
     getchar();
     return 0;
 }
+
 ```
