@@ -22,6 +22,12 @@
 bun add prettier --dev && bun prettier --write .
 ```
 
+Компајлирање
+
+```bash
+ruby compile.rb
+```
+
 `C` у `Markdown`
 
 ```bash
