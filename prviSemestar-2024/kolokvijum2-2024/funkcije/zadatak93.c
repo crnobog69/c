@@ -17,7 +17,7 @@ int Suma(int a)
     return s;
 }
 
-char main()
+int main()
 {
     int i, d, g;
 

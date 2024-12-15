@@ -23,7 +23,7 @@ int main()
     if (m == 0)
         printf(" Zadatai brojevi su isti");
     else
-        printf("\n Maximum = %d\n");
+        printf("\n Maximum = %d\n", m);
 
     getchar();
     return 0;
