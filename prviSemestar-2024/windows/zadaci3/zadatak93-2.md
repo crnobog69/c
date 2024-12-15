@@ -14,7 +14,7 @@ int zbir(int a, int b)
 main()
 {
       printf("\n%d\n", zbir (5, 3)); /*Poziv funckije*/
-
+      
       getche();
       return 0;
 }

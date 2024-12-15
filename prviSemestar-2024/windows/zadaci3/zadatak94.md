@@ -17,7 +17,7 @@ main()
       m=max(max(a, b), max(c, d));
       if (m == 0) printf("Zadati brojevi su isti.");
       else printf("\nMaximum= %d\n", m);
-
+      
       getche();
       return 0;
 }

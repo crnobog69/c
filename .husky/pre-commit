@@ -7,8 +7,5 @@ make all
 
 make clean
 
-# `C`` у `Markdown``
-ruby ctomd.rb
-
 # Покретање Prettier на свим датотекама
 bun prettier --write .

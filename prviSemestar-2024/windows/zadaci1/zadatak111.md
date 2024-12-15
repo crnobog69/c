@@ -8,7 +8,7 @@ main()
 {
  	  int i, n, k = 0, niz[MAX];
  	  double suma = 0;
-
+ 	  
  	  printf(" Broj elemenata: ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza: ");
@@ -21,9 +21,9 @@ main()
 	   		   k++;
  		  }
   	  }
-
+  	  
   	  printf(" SRV = %.3f\n", suma/k);
-
+  	  
   	  getche();
   	  return 0;
 }

@@ -17,7 +17,7 @@ main()
       printf(" Cifre: %d\n", nb);
       printf(" Slova: %d\n", ns);
       printf(" Ukupno: %d\n", nk);
-
+      
       getche();
       return 0;
 }
