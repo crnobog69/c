@@ -5,9 +5,9 @@ int main()
 {
     int a, b, zbir, razlika, proizvod, kolicnik;
 
-    printf("Unesite prvi broj: ");    
+    printf("Unesite prvi broj: ");
 	scanf("%d", &a);
-    printf("Unesite drugi broj: ");   
+    printf("Unesite drugi broj: ");
 	scanf("%d", &b);
 
     zbir = a + b;
@@ -19,7 +19,7 @@ int main()
     printf("Razlika je: %d\n", razlika);
     printf("Proizvod je: %d\n", proizvod);
     printf("Kolicnik je: %d\n", kolicnik);
-    
+
     return 0;
 }
 ```

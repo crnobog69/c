@@ -8,7 +8,7 @@ main()
 {
  	  int nizA[MAX], nizB[MAX], nizC[MAX];
  	  int n, i, j = 0, k = 0;
- 	  
+
  	  printf(" Broj elemenata niza A: ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza A: ");
@@ -33,9 +33,9 @@ main()
   	  printf("\n Elementi niza C: ");
   	  for (i = 0; i < k; i++)
   	  	  printf("%d ", nizC[i]);
-  	  	  
+
   	  getche();
-  	  return 0;	  
+  	  return 0;
 }
 
 ```

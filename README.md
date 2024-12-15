@@ -18,11 +18,9 @@
 
 ## **Форматирање:**
 
-````
-
 ```bash
 bun add prettier --dev && bun prettier --write .
-````
+```
 
 `C` у `Markdown`
 

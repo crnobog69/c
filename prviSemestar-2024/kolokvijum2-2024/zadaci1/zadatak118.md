@@ -17,7 +17,7 @@ main()
 {
  	  double nizA[MAX], nizB[MAX];
  	  int i, n;
- 	  
+
  	  printf(" Broj elemenata niza: ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza A: ");
@@ -27,7 +27,7 @@ main()
  	  for (i = 0; i < n; i++)
  	  	  scanf("%lf", &nizB[i]);
  	  printf("\n A*B = %.2f", SkalPro(nizA, nizB, n));
- 	  
+
  	  getche();
  	  return 0;
 }
