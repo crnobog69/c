@@ -25,7 +25,7 @@ int main()
     scanf("%f", &U0);
 
     R *= 1e3;
-    C * 1e-6;
+    C *= 1e-6;
 
     printf("\n      Vreme           N a p o n  n a ");
     printf("\n       [ms]       kondenzatoru orporniku");

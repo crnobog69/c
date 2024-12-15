@@ -27,7 +27,7 @@ int main()
     scanf("%d", &g);
 
     for (i = d; i <= g; i++)
-        printf("\n%4d\t%3d ", i, Suma(fabs(i)));
+        printf("\n%4d\t%3d ", i, Suma(fabs((double)i))); // претварамо у double пре позива fabs
 
     getchar();
     return 0;

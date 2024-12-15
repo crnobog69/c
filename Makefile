@@ -1,43 +1,25 @@
-# Makefile za testiranje C projekta sa matematičkom bibliotekom
-
-# Pronalaženje svih C fajlova, osim onih u Windows direktorijumu
+# Pronalaženje svih C fajlova, izuzimajući windows fasciklu
 SOURCES := $(shell find prviSemestar-2024 -path "*/windows" -prune -o -name "*.c" -print)
-TEST_SOURCES := $(shell find prviSemestar-2024 -path "*/windows" -prune -o -name "*test*.c" -print)
 
-# Objektni fajlovi
-OBJECTS := $(SOURCES:.c=.o)
-TEST_OBJECTS := $(TEST_SOURCES:.c=.o)
+# Debug - štampaj pronađene fajlove
+$(info Sources: $(SOURCES))
+
+# Izvršni fajlovi će imati isto ime kao i .c fajlovi
+EXECUTABLES := $(SOURCES:.c=)
 
 # Kompajler i zastavice
 CC = gcc
-CFLAGS = -Wall -Wextra -g
-TEST_LIBS = -lcunit -lm  # -lm za matematičku biblioteku
+CFLAGS = -Wall -Wextra -g -lm
 
-# Ime izvršnog programa za testove
-TEST_EXECUTABLE = run_tests
+# Podrazumevana meta - kompajlira sve
+all: $(EXECUTABLES)
 
-# Podrazumevana meta
-all: test
+# Pravilo za pravljenje svakog pojedinačnog executable-a
+%: %.c
+	$(CC) $(CFLAGS) $< -o $@
 
-# Meta za kompajliranje svih objektnih fajlova
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Meta za pokretanje testova
-test: $(TEST_EXECUTABLE)
-	./$(TEST_EXECUTABLE)
-
-# Pravljenje test izvršnog programa
-$(TEST_EXECUTABLE): $(TEST_OBJECTS) $(filter-out *test*.o, $(OBJECTS))
-	$(CC) $(CFLAGS) -o $@ $^ $(TEST_LIBS)
-
-# Čišćenje generisanih fajlova
+# Čišćenje svih generisanih executable-a
 clean:
-	find prviSemestar-2024 -name "*.o" -delete
-	rm -f $(TEST_EXECUTABLE)
+	find prviSemestar-2024 -type f -executable -delete
 
-# Pokreni testove bez zaustavljanja
-test-all: $(TEST_EXECUTABLE)
-	./$(TEST_EXECUTABLE) || true
-
-.PHONY: all test clean test-all
+.PHONY: all clean

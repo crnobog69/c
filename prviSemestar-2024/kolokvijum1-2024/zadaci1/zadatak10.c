@@ -23,6 +23,7 @@ int main()
     case 9:
     case 11:
         BrDana = 30;
+        break;
     case 2:
         BrDana = 28 + ((godina % 4 == 0 && godina % 100 != 0) || godina % 400 == 0);
         break;
