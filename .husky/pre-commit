@@ -3,7 +3,7 @@
 # Додавање свих измењених датотека у git
 git add .
 
-make all
+make all && make clean
 
 # `C`` у `Markdown``
 ruby ctomd.rb
@@ -13,5 +13,3 @@ bun prettier --write .
 
 # `C`` у `Markdown``
 ruby ctomd.rb
-
-make clean
