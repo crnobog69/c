@@ -14,6 +14,7 @@
   - [`kolokvijum2-2024`](prviSemestar-2024/kolokvijum2-2024/)
     - [`funkcije`](prviSemestar-2024/kolokvijum2-2024/funkcije/)
     - [`karakteri`](prviSemestar-2024/kolokvijum2-2024/karakteri/)
+    - [`matrice`](prviSemestar-2024/kolokvijum2-2024/matrice/)
     - [`nizovi`](prviSemestar-2024/kolokvijum2-2024/nizovi/)
   - [`windows`](prviSemestar-2024/windows/)
     - [`rc1`](prviSemestar-2024/windows/rc1/)
