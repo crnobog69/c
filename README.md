@@ -17,6 +17,7 @@
     - [`matrice`](prviSemestar-2024/kolokvijum2-2024/matrice/)
     - [`nizovi`](prviSemestar-2024/kolokvijum2-2024/nizovi/)
     - [`proba`](prviSemestar-2024/kolokvijum2-2024/proba/)
+    - [`stringovi`](prviSemestar-2024/kolokvijum2-2024/stringovi/)
   - [`windows`](prviSemestar-2024/windows/)
     - [`rc1`](prviSemestar-2024/windows/rc1/)
     - [`rc2`](prviSemestar-2024/windows/rc2/)
