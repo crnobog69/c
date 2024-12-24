@@ -1,6 +1,6 @@
-# Пронађи све .c фајлове у свим директоријумима, али прескочи директоријум 'windows'
+# Пронађи све .c датотеке у свим директоријумима, али прескочи директоријум 'windows'
 Dir.glob('**/*.c').reject { |file| file.include?('windows') }.each do |source_file|
-    # Направи име .o фајла
+    # Направи име .o датотеке
     object_file = source_file.sub('.c', '.o')
     
     puts "Копајлирам #{source_file} у #{object_file}..."

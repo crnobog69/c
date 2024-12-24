@@ -1,10 +1,10 @@
 require 'fileutils'
 
 def c_to_md_converter(input_dir)
-  # Пролазак кроз све фајлове и поддиректоријуме
+  # Пролазак кроз све датотеке и поддиректоријуме
   Dir.glob("#{input_dir}/**/*").each do |file|
     if File.file?(file) && File.extname(file) == ".c"
-      # Читање .c фајла и прављење .md фајла
+      # Читање .c датотеке и прављење .md датотеке
       code_content = File.read(file)
       md_content = "```c\n#{code_content}\n```"
 
