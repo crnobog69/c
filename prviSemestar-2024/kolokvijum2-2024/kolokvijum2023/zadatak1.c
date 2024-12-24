@@ -5,8 +5,9 @@
 double faktorijel(int broj)
 {
     double rezultat = 1;
+    int i;
 
-    for (int i = 1; i <= broj; i++)
+    for (i = 1; i <= broj; i++)
     {
         rezultat *= i;
     }
@@ -16,14 +17,15 @@ double faktorijel(int broj)
 int main()
 {
     int n;
+    int i;
     double suma = 0;
 
     printf("Unesite broj n: ");
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
-        suma += 1.0 / faktorijel(i);
+        suma += 1 / faktorijel(i);
     }
 
     printf("Suma je: %.6lf\n", suma);
