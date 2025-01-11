@@ -1,0 +1,7 @@
+M.Markovic 210 115 120 99 27 6
+J.Jankovic 198 100 210 80 52 8
+S.Stankovic 212 135 155 45 15 11
+P.Petrovic 196 98 200 128 81 5
+M.Milovic 213 118 145 85 15 9
+R.Ristic 180 100 100 100 30 20
+N.Nenadic 211 111 100 90 10 20

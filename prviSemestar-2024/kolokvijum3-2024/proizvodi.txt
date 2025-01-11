@@ -1,0 +1,6 @@
+14331 Kafa_Grand 250
+23455 Mleko_Imlek 100
+19920 Cokolada_Milka 520
+19880 Cokolada_Nestle 600
+20001 Deterdzent_Duel 780
+99922 Keks_Jaffa 400
