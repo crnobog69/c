@@ -1,0 +1,5 @@
+Ovo je datoteka.
+Pozdrav svima!
+123 + 456 = 579
+A
+Kraj datoteke.

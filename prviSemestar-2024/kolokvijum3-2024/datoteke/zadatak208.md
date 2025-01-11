@@ -32,7 +32,7 @@ int main()
         {
             fprintf(b, "%d\n", 2 * broj);
         }
-        i++; // Add line counter increment
+        i++; // Додај бројач линија
     }
 
     fclose(a);
