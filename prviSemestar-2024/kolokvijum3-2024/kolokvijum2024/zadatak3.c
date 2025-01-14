@@ -29,5 +29,6 @@ int main()
     printf("Година студија: %d\n", student1.godina);
     printf("Просечна оцена: %.2f\n", student1.prosecna_ocena);
 
+    getchar();
     return 0;
 }

@@ -17,5 +17,6 @@ int main()
     *pokazivac = 20;
     printf("Нова вредност променљиве 'broj' после промене преко показивача: %d\n", broj);
 
+    getchar();
     return 0;
 }

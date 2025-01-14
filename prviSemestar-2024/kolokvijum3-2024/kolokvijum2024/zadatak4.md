@@ -20,7 +20,6 @@ int main()
     if (parni == NULL)
     {
         printf("Грешка при отварању датотеке за парне бројеве.\n");
-        fclose(ulazna);
         return 1;
     }
 
@@ -28,8 +27,6 @@ int main()
     if (neparni == NULL)
     {
         printf("Грешка при отварању датотеке за непарне бројеве.\n");
-        fclose(ulazna);
-        fclose(parni);
         return 1;
     }
 
@@ -38,11 +35,11 @@ int main()
     {
         if (broj % 2 == 0)
         {
-            fprintf(parni, "%d\n", broj); // Упис у датотеку за парне бројеве
+            fprintf(parni, "%d\n", broj); // Упис у датотеку за парне бројеве (`parni.txt`)
         }
         else
         {
-            fprintf(neparni, "%d\n", broj); // Упис у датотеку за непарне бројеве
+            fprintf(neparni, "%d\n", broj); // Упис у датотеку за непарне бројеве (`neparni.txt`)
         }
     }
 
@@ -53,6 +50,7 @@ int main()
     fclose(parni);
     fclose(neparni);
 
+    getchar();
     return 0;
 }
 

@@ -17,20 +17,19 @@ int main()
         return 1;
     }
 
-    // Унос елемената у оригинални низ
-    printf("Унесите елементе низа:\n");
-    for (i = 0; i < n; i++)
-    {
-        scanf("%d", &originalniNiz[i]);
-    }
-
     // Динамичка алокација меморије за нови низ
     noviNiz = (int *)malloc(n * sizeof(int));
     if (noviNiz == NULL)
     {
         printf("Грешка при алокацији меморије.\n");
-        free(originalniNiz);
         return 1;
+    }
+
+    // Унос елемената у оригинални низ
+    printf("Унесите елементе низа:\n");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &originalniNiz[i]);
     }
 
     // Формирање новог низа са дуплираним вредностима
@@ -51,5 +50,6 @@ int main()
     free(originalniNiz);
     free(noviNiz);
 
+    getchar();
     return 0;
 }
