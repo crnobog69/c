@@ -4,6 +4,8 @@
 
 - [`satri`](satri/)
 - [`prviSemestar`](prviSemestar-2024/)
+  - [`ispit_januar`](prviSemestar-2024/ispit_januar/)
+    - [`crtanje`](prviSemestar-2024/ispit_januar/crtanje/)
   - [`kolokvijum1-2024`](prviSemestar-2024/kolokvijum1-2024/)
     - [`kolokvijum2020`](prviSemestar-2024/kolokvijum1-2024/kolokvijum2020/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum1-2024/zadaci1/)
@@ -21,6 +23,8 @@
     - [`stringovi`](prviSemestar-2024/kolokvijum2-2024/stringovi/)
   - [`kolokvijum3-2024`](prviSemestar-2024/kolokvijum3-2024/)
     - [`datoteke`](prviSemestar-2024/kolokvijum3-2024/datoteke/)
+    - [`dinamika`](prviSemestar-2024/kolokvijum3-2024/dinamika/)
+    - [`kolokvijum2024`](prviSemestar-2024/kolokvijum3-2024/kolokvijum2024/)
     - [`pokazivaci`](prviSemestar-2024/kolokvijum3-2024/pokazivaci/)
   - [`windows`](prviSemestar-2024/windows/)
     - [`rc1`](prviSemestar-2024/windows/rc1/)
