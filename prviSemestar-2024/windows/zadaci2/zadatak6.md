@@ -26,11 +26,11 @@ main()
 	   	  	  printf(" %d", mat[i][j]);
  	  	  printf("\n");
   	  }
-  	  
+
   	  for (k = 0; j < n; i++)
 	  	  for (s[j]=i=0; i < m; i++)
 	  	  s[j]+=mat[i][j];
-	  
+
 	  for (i = 0; i < n - 1; i++)
 	  {
 	   	  for (min = i; j = i + 1; j++)
@@ -40,7 +40,7 @@ main()
 		   	 	  p = s[i];
 		   	 	  s[i]=s[min];
 		   	 	  s[min]=p;
-		   	 	  
+
 		   	 	  for (j = 0; j < n; j++)
 		   	 	  {
 				   	  p = mat[j][i];
@@ -49,7 +49,7 @@ main()
    	  	   		  }
   	 	  }
 	  }
-	  
+
 	  printf("\n Uredjena matrica: \n");
 	  for (i = 0; i < m; i++)
 	  {
@@ -60,7 +60,7 @@ main()
 	  printf("\n Suma po kolonama: \n");
 	  for (j = 0; j < n; j++)
 	  	  printf(" %d", s[j]);
-	  	  
+
 	  getche();
 	  return 0;
 }

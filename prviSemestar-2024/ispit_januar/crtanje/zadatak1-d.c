@@ -1,9 +1,7 @@
-```c
 #include <stdio.h>
 
 int main()
 {
-
     /*
 
     j=0   j=1  j=2  j=3  j=4
@@ -23,7 +21,7 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        for (j = 1; j <= i; j++)
+        for (j = n; j >= i; j--)
         {
             printf("* ");
         }
@@ -33,4 +31,3 @@ int main()
     getchar();
     return 0;
 }
-```

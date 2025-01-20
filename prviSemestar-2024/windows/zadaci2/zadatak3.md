@@ -11,7 +11,7 @@ main()
  	  scanf("%d", &m);
  	  printf(" n = ");
  	  scanf("%d", &n);
- 	  
+
  	  printf("\n Elementi prve matrice: \n");
  	  for (i = 0; i < m; i++)
  	  	  for (j = 0; j < n; j++)
@@ -20,7 +20,7 @@ main()
  	  for (i = 0; i < m; i++)
  	  	  for (j = 0; j < n; j++)
  	  	  scanf("%d", &b[i][j]);
- 	  
+
 	  printf("\n Zbir dve matrice:\n");
 	  for (i = 0; i < m; i++)
 	  {
@@ -31,7 +31,7 @@ main()
   	  	  }
   	  	  printf("\n");
    	  }
-   	  
+
    	  getche();
    	  return 0;
 }

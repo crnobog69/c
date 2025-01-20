@@ -25,7 +25,7 @@ main()
 	   	  	  printf(" %d", mat[i][j]);
  	  	  printf("\n");
    	  }
-   	  
+
    	  getche();
    	  return 0;
 }

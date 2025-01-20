@@ -8,7 +8,7 @@ main()
 {
  	  float nizA[MAX], nizB[MAX], nizC[MAX];
  	  int i, n;
- 	  
+
  	  printf(" n = ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza A: ");
@@ -23,7 +23,7 @@ main()
 	   		nizC[i] = pow(nizA[i],3)/3+2*nizA[i]*nizB[i];
 	   		printf("%.2f ", nizC[i]);
 	  }
-	  
+
 	  getche();
 	  return 0;
 }

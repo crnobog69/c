@@ -15,7 +15,7 @@ Dir.glob('**/*.c').reject { |file| file.include?('windows') }.each do |source_fi
   end
   
   # Линковати све .o фајлове у извршни фајл
-  puts "Линковали све .o фајлове у извршни фајл..."
+  puts "Линковати све .o фајлове у извршни фајл..."
   
   # Линковање са -lm опцијом ако користите math.h
   system('gcc *.o -o program -lm')
@@ -25,5 +25,5 @@ Dir.glob('**/*.c').reject { |file| file.include?('windows') }.each do |source_fi
     exit 1
   end
   
-  puts "Све .o датотеке су успешно компајлиране и линкован је извршни фајл 'program'."
+  puts "Све .o датотеке су успешно компајлиране и линкован је извршну датотеку."
   
