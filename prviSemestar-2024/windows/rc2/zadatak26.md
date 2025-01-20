@@ -25,7 +25,7 @@ main()
 	else
 		if(Dx == 0 && Dy == 0)
 			printf("Sistem ima beskonacno resenja.\n");
-		else 
+		else
 			printf("Sistem nema resenja.\n");
 	getche();
 	return 0;

@@ -6,9 +6,9 @@
 main()
 {
       printf("\nDobrodosli ");
-      printf("u jezik C\n\n");      
+      printf("u jezik C\n\n");
       getche();
-      return 0;      
+      return 0;
 }
 
 ```

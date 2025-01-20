@@ -15,7 +15,7 @@ main()
           i=i+2;
       }
       while(i <= 10);
-      
+
       getche();
       return 0;
 }

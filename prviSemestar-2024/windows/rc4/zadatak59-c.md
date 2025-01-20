@@ -13,7 +13,7 @@ main()
           i--;
       }
       while(i <= 10 && i > 0);
-      
+
       getche();
       return 0;
 }

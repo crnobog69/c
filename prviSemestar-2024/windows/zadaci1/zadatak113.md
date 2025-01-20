@@ -7,13 +7,13 @@
 main()
 {
  	  int i, n, m, nizA[MAX], nizB[MAX], nizC[2*MAX];
- 	  
+
  	  printf(" Broj elemenata niza A: ");
  	  scanf("%d", &n);
  	  printf(" Elementi niza A: ");
  	  for (i = 0; i < n; i++)
  	  	  scanf("%d", &nizA[i]);
- 	  	  
+
  	  printf(" Broj elemenata niza B: ");
  	  scanf("%d", &m);
  	  printf(" Elementi niza B: ");
@@ -27,7 +27,7 @@ main()
 	   	  else nizC[i] = nizB[i - n];
 	   	  printf(" %d", nizC[i]);
   	  }
-  	  
+
   	  getche();
   	  return 0;
 }
