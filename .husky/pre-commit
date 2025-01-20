@@ -1,5 +1,7 @@
 #!/bin/sh
 
+ruby ctomd.rb
+
 # Додавање свих измењених датотека у git
 git add .
 
@@ -9,5 +11,3 @@ make clean
 
 # Покретање Prettier на свим датотекама
 bun prettier --write .
-
-ruby ctomd.rb

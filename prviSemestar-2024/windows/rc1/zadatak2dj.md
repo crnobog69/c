@@ -11,7 +11,7 @@ main()
       printf("DEF");
       printf("\nA\nBC\nDEF\n");
       getche();
-      return 0;
+      return 0;      
 }
 
 ```

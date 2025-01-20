@@ -5,7 +5,7 @@
 main()
 {
  	  int i, j, m, n, s = 0, nule = 0, mat[MAX][MAX];
-
+ 	  
  	  printf(" m = ");
  	  scanf("%d", &m);
  	  printf(" n = ");
@@ -22,7 +22,7 @@ main()
  	 	 }
  	 	 printf("\n Suma parnih elemenata: %d", s);
  	 	 printf("\n Broj elemenata jednakih nuli: %d", nule);
-
+ 	 	 
  	 	 getche();
  	 	 return 0;
 }

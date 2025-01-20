@@ -18,7 +18,7 @@ main()
       for (i = 1; i <= 500; i++)
           if (Prost(i) == 1)
              printf("%d\t", i);
-
+      
       getche();
       return 0;
 }

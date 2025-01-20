@@ -10,7 +10,7 @@ main()
           if (i % 3 == 0 && i % 4 == 0 && i % 5 == 0 && i % 7 == 0 && 39 == 0)
           {
                 printf("%d\n", i);
-
+                
           }
           getche();
           return 0;

@@ -13,7 +13,7 @@ main()
               n++;
       }
       printf("\n Broj karaktera je %d.\n", n);
-
+      
       getche();
       return 0;
 }
