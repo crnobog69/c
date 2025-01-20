@@ -9,3 +9,5 @@ make clean
 
 # Покретање Prettier на свим датотекама
 bun prettier --write .
+
+ruby ctomd.rb
