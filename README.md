@@ -54,3 +54,9 @@ ruby compile.rb
 ```bash
 ruby ctomd.rb
 ```
+
+## Пребројавање редова и карактера
+
+```bash
+ruby brojac.rb
+```
