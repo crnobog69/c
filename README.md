@@ -2,7 +2,6 @@
 
 ## Структуре директоријума
 
-- [`satri`](satri/)
 - [`prviSemestar`](prviSemestar-2024/)
   - [`ispit_januar`](prviSemestar-2024/ispit_januar/)
     - [`crtanje`](prviSemestar-2024/ispit_januar/crtanje/)
