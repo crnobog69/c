@@ -19,11 +19,11 @@ main()
                    n++;
                    break;
               default:
-                   break;
+                   break;       
       }
       printf("\nRazmaci: %d", razmak);
       printf("\nOstali trazeni: %d", n);
-
+         
       getche();
       return 0;
 }

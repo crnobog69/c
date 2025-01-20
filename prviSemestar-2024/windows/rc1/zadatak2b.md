@@ -7,7 +7,7 @@ main()
 {
       printf("\nPozdrav svima!\n");
       getche();
-      return 0;
+      return 0;      
 }
 
 ```
