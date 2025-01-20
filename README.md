@@ -5,6 +5,8 @@
 - [`prviSemestar`](prviSemestar-2024/)
   - [`ispit_januar`](prviSemestar-2024/ispit_januar/)
     - [`crtanje`](prviSemestar-2024/ispit_januar/crtanje/)
+    - [`datoteke`](prviSemestar-2024/ispit_januar/datoteke/)
+    - [`matematika`](prviSemestar-2024/ispit_januar/matematika/)
   - [`kolokvijum1-2024`](prviSemestar-2024/kolokvijum1-2024/)
     - [`kolokvijum2020`](prviSemestar-2024/kolokvijum1-2024/kolokvijum2020/)
     - [`zadaci1`](prviSemestar-2024/kolokvijum1-2024/zadaci1/)
