@@ -56,10 +56,18 @@
 bun add prettier --dev && bun prettier --write .
 ```
 
-## Компајлирање
+## Масовно компајлирање
+
+### Ruby
 
 ```bash
 ruby compile.rb
+```
+
+### Make
+
+```bash
+make all
 ```
 
 ## `C` у `Markdown`
