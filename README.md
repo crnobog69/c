@@ -60,7 +60,7 @@ ruby compile.rb
 
 ### Make
 
-```bash
+```make
 make all
 ```
 
