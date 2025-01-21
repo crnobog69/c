@@ -50,12 +50,6 @@
 
 ---
 
-## Форматирање
-
-```bash
-bun add prettier --dev && bun prettier --write .
-```
-
 ## Масовно компајлирање
 
 ### Ruby
@@ -68,6 +62,12 @@ ruby compile.rb
 
 ```bash
 make all
+```
+
+## Форматирање
+
+```bash
+bun add prettier --dev && bun prettier --write .
 ```
 
 ## `C` у `Markdown`
