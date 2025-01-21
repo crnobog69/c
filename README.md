@@ -3,7 +3,7 @@
 ## Структуре директоријума
 
 - [`prviSemestar`](prviSemestar-2024/)
-  - [`ispit_januar`](prviSemestar-2024/ispit_januar/)
+  - [`ispitJanuar-2025`](prviSemestar-2024/ispitJanuar-2025/)
     - [`crtanje`](prviSemestar-2024/ispit_januar/crtanje/)
     - [`datoteke`](prviSemestar-2024/ispit_januar/datoteke/)
     - [`matematika`](prviSemestar-2024/ispit_januar/matematika/)

@@ -1,3 +1,4 @@
+```c
 #include <stdio.h>
 #define MAX 100
 
@@ -70,10 +71,10 @@ int main()
                   &igrac[i].broj_ukradenih_lopti, &igrac[i].broj_blokada) == 8)
     {
         // Рачунамо укупан учинак по формули
-        igrac[i].ukupno = igrac[i].broj_koseva * 1 +            // Кош = 1 поен
-                          igrac[i].broj_asistencija * 0.5 +     // Асистенција = 0.5
-                          igrac[i].broj_ukradenih_lopti * 0.3 + // Украдена = 0.3
-                          igrac[i].broj_blokada * 0.22;         // Блокада = 0.22
+        igrac[i].ukupno = igrac[i].broj_koseva * 1 +
+                          igrac[i].broj_asistencija * 0.5 +
+                          igrac[i].broj_ukradenih_lopti * 0.3 +
+                          igrac[i].broj_blokada * 0.22;
 
         // Ажурирамо индекс најбољег играча
         if (igrac[i].ukupno > igrac[max_index].ukupno)
@@ -102,5 +103,7 @@ int main()
            igrac[max_index].prezime,
            igrac[max_index].ukupno);
 
+    getchar();
     return 0;
 }
+```
