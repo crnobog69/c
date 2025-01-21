@@ -28,5 +28,6 @@ end
 
 puts "-" * 50
 puts " Укупна статистика:"
+puts "   Укупно (.c) датотека: #{datoteke.count}"
 puts "   Укупно карактера: #{ukupno_karaktera}"
 puts "   Укупно редова: #{ukupno_redova}"
