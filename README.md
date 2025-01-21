@@ -4,7 +4,7 @@
 
 ---
 
-## Структуре директоријума
+## Структуре репозиторијума
 
 - [`prviSemestar`](prviSemestar-2024/)
   - [`ispitJanuar-2025`](prviSemestar-2024/ispitJanuar-2025/)
