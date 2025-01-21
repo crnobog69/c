@@ -52,13 +52,13 @@
 
 ### Масовно компајлирање
 
-#### Ruby
+- #### Ruby
 
 ```bash
 ruby compile.rb
 ```
 
-#### Make
+- #### Make
 
 ```bash
 make all
