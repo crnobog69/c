@@ -57,8 +57,8 @@ ruby compile.rb
 ruby ctomd.rb
 ```
 
-## Пребројавање редова и карактера
+## Пребројавање редова, карактера и `.c` датотека
 
 ```bash
-ruby brojac.rb
+ruby cbrojac.rb
 ```
