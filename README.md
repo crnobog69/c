@@ -50,33 +50,33 @@
 
 ---
 
-## Масовно компајлирање
+### Масовно компајлирање
 
-### Ruby
+#### Ruby
 
 ```bash
 ruby compile.rb
 ```
 
-### Make
+#### Make
 
-```make
+```bash
 make all
 ```
 
-## Форматирање
+### Форматирање
 
 ```bash
 bun add prettier --dev && bun prettier --write .
 ```
 
-## `C` у `Markdown`
+### `C` у `Markdown`
 
 ```bash
 ruby ctomd.rb
 ```
 
-## Пребројавање редова, карактера и `.c` датотека
+### Пребројавање редова, карактера и `.c` датотека
 
 ```bash
 ruby cbrojac.rb
