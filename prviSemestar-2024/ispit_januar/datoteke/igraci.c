@@ -58,7 +58,7 @@ int main()
     // Провера да ли је фајл успешно отворен
     if (igraci == NULL)
     {
-        printf("greska!");
+        printf("Greska!");
         return 1;
     }
 
