@@ -2,5 +2,5 @@
 
 int main()
 {
-    puts("C");
+    puts("\n C \n");
 }
