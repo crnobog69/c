@@ -45,6 +45,7 @@
     - [`dinamika`](prviSemestar-2024/kolokvijum3-2024/dinamika/)
     - [`kolokvijum2024`](prviSemestar-2024/kolokvijum3-2024/kolokvijum2024/)
     - [`pokazivaci`](prviSemestar-2024/kolokvijum3-2024/pokazivaci/)
+  - [`test`](prviSemestar-2024/test/)
   - [`windows`](prviSemestar-2024/windows/)
     - [`rc1`](prviSemestar-2024/windows/rc1/)
     - [`rc2`](prviSemestar-2024/windows/rc2/)
