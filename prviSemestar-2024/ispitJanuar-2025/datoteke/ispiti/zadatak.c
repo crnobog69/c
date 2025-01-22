@@ -60,9 +60,6 @@ int main()
         return 1;
     }
 
-    // Бројачи
-    int polozili_brojac = 0, nisu_polozili_brojac = 0;
-
     // Читање и обрађивање студената
     while (fscanf(ispiti, "%s %s %d %d %d",
                   student[i].ime,
@@ -82,6 +79,10 @@ int main()
     int n = i;
     printf("Ucitano %d studenata.\n", n);
 
+    // Бројачи
+    int polozili_brojac = 0, nisu_polozili_brojac = 0;
+
+    // Писање у датотеке са `ukupnoPoena`
     for (i = 0; i < n; i++)
     {
         if (polaganje[i].ukupnoPoena > 50)
@@ -90,7 +91,7 @@ int main()
                     polaganje[i].ime,
                     polaganje[i].prezime,
                     polaganje[i].ukupnoPoena);
-            polozili_brojac++;
+            polozili_brojac++; // Повечава се број студената који су положили
         }
         else
         {
@@ -98,7 +99,7 @@ int main()
                     polaganje[i].ime,
                     polaganje[i].prezime,
                     polaganje[i].ukupnoPoena);
-            nisu_polozili_brojac++;
+            nisu_polozili_brojac++; // Повечава се број студената који су нису положили
         }
     }
 

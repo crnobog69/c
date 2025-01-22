@@ -26,17 +26,35 @@
 typedef struct
 {
     int dan;
-
     int temp7;
     int temp13;
     int temp19;
-
     float prosek;
 } Temperature;
+
+typedef struct
+{
+    int dan;
+    float prosek;
+    int temp7;
+    int temp13;
+    int temp19;
+} NajtoplijiDan;
+
+typedef struct
+{
+    int dan;
+    float prosek;
+    int temp7;
+    int temp13;
+    int temp19;
+} NajhladnijiDan;
 
 int main()
 {
     Temperature temp[MAX];
+    NajtoplijiDan maxDan;
+    NajhladnijiDan minDan;
     FILE *prosecne;
     FILE *temperature;
     int i = 0;
@@ -66,34 +84,50 @@ int main()
 
     int n = i; // Укупан број дана
     int j;
-    Temperature tmp; // Привремена променљива за замену вредности
+    Temperature privremeniPodaci; // Привремена променљива за замену вредности
 
     // Сортирање по просечној температури (опадајуће)
     // Користимо bubble sort алгоритам
-    for (i = 0; i < n - 1; i++) // Пролазимо кроз све елементе осим последњег
+    for (i = 0; i < n; i++)
     {
-        // За сваки елемент проверавамо све преостале
-        for (j = i + 1; j < n; j++)
+        for (j = i; j < n; j++)
         {
             // Ако је следећи елемент већи, заменимо их
             // (за опадајући редослед користимо '>')
             if (temp[j].prosek > temp[i].prosek)
             {
                 // Замена елемената помоћу привремене променљиве
-                tmp = temp[i];     // Чувамо тренутни елемент
-                temp[i] = temp[j]; // Постављамо већи на текућу позицију
-                temp[j] = tmp;     // Враћамо сачувани на позицију већег
+                privremeniPodaci = temp[i]; // Чувамо тренутни елемент
+                temp[i] = temp[j];          // Постављамо већи на текућу позицију
+                temp[j] = privremeniPodaci; // Враћамо сачувани на позицију већег
             }
         }
     }
+
+    // Nakon sortiranja, čuvamo ekstremne vrednosti
+    maxDan.dan = temp[0].dan;
+    maxDan.prosek = temp[0].prosek;
+    maxDan.temp7 = temp[0].temp7;
+    maxDan.temp13 = temp[0].temp13;
+    maxDan.temp19 = temp[0].temp19;
+
+    minDan.dan = temp[n - 1].dan;
+    minDan.prosek = temp[n - 1].prosek;
+    minDan.temp7 = temp[n - 1].temp7;
+    minDan.temp13 = temp[n - 1].temp13;
+    minDan.temp19 = temp[n - 1].temp19;
 
     for (i = 0; i < n; i++)
     {
         fprintf(prosecne, "Dan %d: %.2f\n", temp[i].dan, temp[i].prosek);
     }
 
-    printf("Najtopliji dan: %d (%.2f)\n", temp[0].dan, temp[0].prosek);
-    printf("Najhladniji dan: %d (%.2f)\n", temp[n - 1].dan, temp[n - 1].prosek);
+    // Menjamo ispis da koristi nove strukture
+    printf("Najtopliji dan: %d (%.2f) - temperature: %d, %d, %d\n",
+           maxDan.dan, maxDan.prosek, maxDan.temp7, maxDan.temp13, maxDan.temp19);
+    printf("Najhladniji dan: %d (%.2f) - temperature: %d, %d, %d\n",
+           minDan.dan, minDan.prosek, minDan.temp7, minDan.temp13, minDan.temp19);
+
     printf("\nProsecne temperature:\n");
     printf("07h: %.2f\n", suma7 / n);
     printf("13h: %.2f\n", suma13 / n);

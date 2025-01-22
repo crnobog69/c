@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #define MAX 100
 
 /*
@@ -44,13 +45,22 @@ typedef struct
     float ukupno;
 } Igrac;
 
+typedef struct
+{
+    char ime[100];
+    char prezime[100];
+
+    float ukupno;
+} NajboljiIgrac;
+
 int main()
 {
     // Низ за чување података о играчима
     Igrac igrac[MAX];
+    NajboljiIgrac najboljiIgrac[MAX];
     FILE *igraci;
-    int i = 0;         // Бројач играча
-    int max_index = 0; // Индекс најбољег играча
+    int i = 0;                  // Бројач играча
+    int najboljiIgracIndex = 0; // Индекс најбољег играча
 
     // Отварамо фајл за читање
     igraci = fopen("igraci.txt", "r");
@@ -76,9 +86,11 @@ int main()
                           igrac[i].broj_blokada * 0.22;
 
         // Ажурирамо индекс најбољег играча
-        if (igrac[i].ukupno > igrac[max_index].ukupno)
+        if (igrac[i].ukupno > igrac[najboljiIgracIndex].ukupno)
         {
-            max_index = i;
+            strcpy(najboljiIgrac[najboljiIgracIndex].ime, igrac[i].ime);
+            strcpy(najboljiIgrac[najboljiIgracIndex].prezime, igrac[i].prezime);
+            najboljiIgrac[najboljiIgracIndex].ukupno = igrac[i].ukupno;
         }
 
         // Прелазимо на следећег играча
@@ -98,9 +110,9 @@ int main()
     // Исписујемо резултате
     printf("\n Broj igraca: %d \n", i);
     printf("\n Igrac sa najvise poena: %s %s, Ukupno: %.2f\n",
-           igrac[max_index].ime,
-           igrac[max_index].prezime,
-           igrac[max_index].ukupno);
+           najboljiIgrac[najboljiIgracIndex].ime,
+           najboljiIgrac[najboljiIgracIndex].prezime,
+           najboljiIgrac[najboljiIgracIndex].ukupno);
 
     getchar();
     return 0;
