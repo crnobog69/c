@@ -93,7 +93,7 @@ ruby cbrojac.rb
 ---
 
 ## Други семестар - Програмски језик ***Python***
-> [!WARNING]
+> [!CAUTION]
 > Репозиторијум са задацима из другог семестра можете пронаћи на:
 > <br>
 > [**`github.com/crnobog69/py`**](https://github.com/crnobog69/py)
