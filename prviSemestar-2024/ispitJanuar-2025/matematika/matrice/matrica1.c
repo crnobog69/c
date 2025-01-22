@@ -69,5 +69,6 @@ int main()
     // 2. На крају ослобађамо меморију за низ показивача
     free(matrica);
 
+    getchar();
     return 0;
 }

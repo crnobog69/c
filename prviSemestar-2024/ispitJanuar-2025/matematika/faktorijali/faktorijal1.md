@@ -45,6 +45,7 @@ int main()
     double rezultat = racunanjeSume(broj);
     printf("Suma za n = %d je: %lf\n", broj, rezultat);
 
+    getchar();
     return 0;
 }
 ```
