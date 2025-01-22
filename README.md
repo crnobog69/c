@@ -96,4 +96,5 @@ ruby cbrojac.rb
 > [!CAUTION]
 > Репозиторијум са задацима из другог семестра можете пронаћи на:
 > <br>
+> <br>
 > [**`github.com/crnobog69/py`**](https://github.com/crnobog69/py)
