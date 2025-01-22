@@ -104,7 +104,7 @@ int main()
         }
     }
 
-    // Nakon sortiranja, čuvamo ekstremne vrednosti
+    // Након сортирања, чувамо екстремне вредности
     maxDan.dan = temp[0].dan;
     maxDan.prosek = temp[0].prosek;
     maxDan.temp7 = temp[0].temp7;
@@ -122,7 +122,7 @@ int main()
         fprintf(prosecne, "Dan %d: %.2f\n", temp[i].dan, temp[i].prosek);
     }
 
-    // Menjamo ispis da koristi nove strukture
+    // Мењамо испис да користи нове структуре
     printf("Najtopliji dan: %d (%.2f) - temperature: %d, %d, %d\n",
            maxDan.dan, maxDan.prosek, maxDan.temp7, maxDan.temp13, maxDan.temp19);
     printf("Najhladniji dan: %d (%.2f) - temperature: %d, %d, %d\n",
