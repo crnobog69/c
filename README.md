@@ -91,6 +91,7 @@ ruby cbrojac.rb
 ```
 
 ---
-### Задаци из програмског језика > `Python`
+### Други семестар
+#### Задаци из програмског језика > `Python`
 
 [***`crnobog69/py`***](https://github.com/crnobog69/py)
